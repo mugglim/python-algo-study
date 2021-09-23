@@ -1,4 +1,4 @@
-# algo-stduy
+# algo-study
 
 ## 사용 언어
 
