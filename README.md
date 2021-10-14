@@ -29,6 +29,9 @@ print(reduce(lambda x,y: x+y, nums,100)) # 131
 
 # 2d -> 1d
 print(reduce(lambda prev, next: [*prev, *next], arr1))
+# 초기값을 선언하는 경우
+print(reduce(lambda prev, next: [*prev, *next], arr1,[]))
+
 
 # obj -> string
 print(list(map(lambda obj: f"이름:{obj['name']}, 팀:{obj['team']}",objList)))
