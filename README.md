@@ -6,6 +6,16 @@
 <img align='center' src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mugglim">
 
 
+### 귀찮은 인덱싱은 그마아안!
+```python
+# nope!
+a,b,c,d = map(int,input().split())
+a,b,c,d, = a-1, b-1,c-1,d-1
+
+# yes!
+a,b,c,d = map(map(lambda x:x-1, input().split()))
+```
+
 ### Reduce
 ```python
 from functools import reduce
