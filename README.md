@@ -5,6 +5,13 @@
 ### BOJ Profile
 <img align='center' src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mugglim">
 
+### Commit 
+```python
+programmers : 'pg-category-name'
+backjoon : 'boj-category-name'
+leetcode : 'lt-category-name'
+hackerrank : 'hr-category-name'
+```
 
 ### 귀찮은 인덱싱은 그마아안!
 ```python
