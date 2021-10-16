@@ -37,6 +37,7 @@ print(reduce(lambda prev, next: [*prev, *next], arr1,[]))
 print(list(map(lambda obj: f"이름:{obj['name']}, 팀:{obj['team']}",objList)))
 ```
 
+
 ### Two Pointer
 ```python
 def twoPointer(arr, target):
@@ -77,4 +78,23 @@ def bfs(graph, start_vertex):
                 answer.append(_next)
 
     return answer
+```
+
+### DFS 
+- (1), (2)은 동일한 결과를 반환한다.
+```python
+
+def dfs(value, visited):
+    # bad
+    for _next in graph[value]:    
+        # (1)
+        if  not in visited: 
+            visited.append(value)
+            dfs(_next, visited)
+            visited.pop()
+        # (2)
+        if  not in visited: 
+            dfs(_next, [*visited, _next])   
+
+dfs(0, [])
 ```
