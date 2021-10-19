@@ -20,7 +20,7 @@ a,b,c,d = map(int,input().split())
 a,b,c,d, = a-1, b-1,c-1,d-1
 
 # yes!
-a,b,c,d = map(map(lambda x:x-1, input().split()))
+a,b,c,d = map(lambda x:x-1, map(int,input().split()))
 ```
 
 ### Reduce
