@@ -119,6 +119,9 @@ dfs(0, [])
 ## Shorted-Path
 
 ### Dijkstra 
+- [Reference](https://sungjk.github.io/2016/05/13/Dijkstra.html)
+- `Big-O` : O(ElogV)
+    - O(ElogE) = O(VlogE) (E << V<sup>2</sup>)
 ```python
 def dijkstra(graph,start,end):
     n = len(graph)
@@ -144,16 +147,13 @@ def dijkstra(graph,start,end):
 ```
 
 ### Floyd-Warshall
+- `Big-O` : O(n<sup>3</sup>)
+
 ```python
-def floyd(n,graph):
-    costs = [[INF] * n for _ in range(n)]
-
-    for i in range(n): costs[i][i] = 0
-
+def floyd(graph):
+    n = len(graph)
     for k in range(n):
         for a in range(n):
             for b in range(n):
-                costs[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
-
-    return costs
+                graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
 ```
