@@ -116,6 +116,8 @@ def dfs(value, visited):
 dfs(0, [])
 ```
 
+## Shorted-Path
+
 ### Dijkstra 
 ```python
 def dijkstra(graph,start,end):
@@ -139,4 +141,19 @@ def dijkstra(graph,start,end):
                 heapq.heappush(heap, (newCost, nextVertex))
 
     return costs[end]
+```
+
+### Floyd-Warshall
+```python
+def floyd(n,graph):
+    costs = [[INF] * n for _ in range(n)]
+
+    for i in range(n): costs[i][i] = 0
+
+    for k in range(n):
+        for a in range(n):
+            for b in range(n):
+                costs[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
+
+    return costs
 ```
