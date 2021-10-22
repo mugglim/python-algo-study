@@ -116,7 +116,7 @@ def dfs(value, visited):
 dfs(0, [])
 ```
 
-## Shorted-Path
+## Shortest-Path
 
 ### Dijkstra 
 - [Reference](https://sungjk.github.io/2016/05/13/Dijkstra.html)
