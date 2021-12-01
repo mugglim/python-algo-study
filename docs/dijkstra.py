@@ -1,10 +1,6 @@
-# Shortest-Path
+import heapq
+INF = int(1e10)
 
-### Dijkstra 
-- [Reference](https://sungjk.github.io/2016/05/13/Dijkstra.html)
-- `Big-O` : O(ElogV)
-    - O(ElogE) = O(VlogE) (E << V<sup>2</sup>)
-```python
 def dijkstra(graph,start,end):
     n = len(graph)
     costs = [INF] * n
@@ -26,16 +22,3 @@ def dijkstra(graph,start,end):
                 heapq.heappush(heap, (newCost, nextVertex))
 
     return costs[end]
-```
-
-### Floyd-Warshall
-- `Big-O` : O(n<sup>3</sup>)
-
-```python
-def floyd(graph):
-    n = len(graph)
-    for k in range(n):
-        for a in range(n):
-            for b in range(n):
-                graph[a][b] = min(graph[a][b], graph[a][k] + graph[k][b])
-```

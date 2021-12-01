@@ -1,16 +1,12 @@
-# Graph Search
-
-### BFS
-```python
+## bfs
 from collections import deque
-
 
 def bfs(graph, start_vertex):
     queue = deque([start_vertex])
-    answer = []
+    result = []
     visited = {}
     visited[start_vertex] = True
-    answer.append(start_vertex)
+    result.append(start_vertex)
 
     while queue:
         curr = queue.popleft()
@@ -18,27 +14,20 @@ def bfs(graph, start_vertex):
             if _next not in visited:
                 visited[_next] = True
                 queue.append(_next)
-                answer.append(_next)
+                result.append(_next)
 
-    return answer
-```
+    return result
 
-### DFS 
-- (1), (2)은 동일한 결과를 반환한다.
-```python
-
+## dfs
 def dfs(value, visited):
-    # bad
-    for _next in graph[value]:    
+    for _next in graph[value]:
         # (1)
-        if  not in visited: 
+        if not in visited:
             visited.append(value)
             dfs(_next, visited)
             visited.pop()
         # (2)
-        if  not in visited: 
-            dfs(_next, [*visited, _next])   
+        if  not in visited:
+            dfs(_next, [*visited, _next])
 
-dfs(0, [])
-```
-
+# dfs(0, [])
