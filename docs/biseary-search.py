@@ -12,6 +12,28 @@ def bs(arr, target):
 
     return -1
 
+
+def lower_bound(arr,target):
+    l,r = 0, len(arr) - 1
+
+    while l <= r:
+        mid = (l+r) // 2
+        if arr[mid] < target: l = mid + 1
+        else: r = mid
+
+    return r+1
+
+
+def upper_bound(arr,target):
+    l,r = 0, len(arr) - 1
+
+    while l <= r:
+        mid = (l+r) // 2
+        if arr[mid] <= target: l = mid + 1
+        else: r = mid
+
+    return r+1
+
 # (2) with bisect
 # bisect_left(arr, target, lo=0, hi=len(arr))
 # bisect_right(arr, target, lo=0, hi=len(arr))
