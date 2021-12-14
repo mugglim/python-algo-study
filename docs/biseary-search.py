@@ -13,6 +13,10 @@ def bs(arr, target):
     return -1
 
 # (2) with bisect
+# bisect_left(arr, target, lo=0, hi=len(arr))
+# bisect_right(arr, target, lo=0, hi=len(arr))
+#   (1) lo를 통해 탐색 시작 범위를 설정할 수 있음.
+#   (2) hi를 통해 탐색 종료 범위를 설정할 수 있음.
 def binarySearch(arr, target):
     size = len(target)
     idx = bisect.bisect_left(arr, target)
