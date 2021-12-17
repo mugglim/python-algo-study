@@ -81,12 +81,15 @@ class DoublyLinkedList:
         return False if self.isEmpty() else self.tail.prev.value
 ```
 
-# Doubly Linked List + Stack/Queue/Hash
+# Doubly Linked List + Stack
 - 연습 문제 
-    - https://programmers.co.kr/learn/courses/30/lessons/81303
-    - https://leetcode.com/problems/lru-cache/submissions/
+    - https://programmers.co.kr/learn/courses/30/lessons/81303 + [풀이](../../양방향연결리스트/pg-dl-표편집/README.md)
+- ✅ 삭제 된 순서대로 Restore가 발생한다면!
 
-|InsertAt|RemoveAt|AppendLeft|Append|PopLeft|Pop|
-|:----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|Restore|AppendLeft|Append|PopLeft|Pop|
+|:----:|:-----:|:-----:|:-----:|:-----:|
 |O(1)|O(1)|O(1)|O(1)|O(1)|O(1)|
-- 삽입한 노드에 대한 포인터를 저장하고 있다면!
+
+# Dobuly Linked List + Hash
+- 연습문제 
+    - https://leetcode.com/problems/lru-cache/submissions/
