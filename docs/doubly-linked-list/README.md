@@ -92,4 +92,4 @@ class DoublyLinkedList:
 
 # Dobuly Linked List + Hash
 - 연습문제 
-    - https://leetcode.com/problems/lru-cache
+    - https://leetcode.com/problems/lru-cache + [풀이](../../양방향연결리스트/lc-dl-146/README.md)
