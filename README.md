@@ -18,6 +18,6 @@
 ```python
 programmers : 'pg-category-name'
 backjoon : 'boj-category-name'
-leetcode : 'lt-category-name'
+leetcode : 'lc-category-name'
 hackerrank : 'hr-category-name'
 ```
