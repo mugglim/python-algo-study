@@ -1,26 +1,35 @@
-from typing import List
 from collections import deque
+from typing import List
 
+input = sys.stdin.readline
+
+def getIndgreeList(graph: List[List[int]]) -> List[int]:
+    size = len(graph)
+    indegreeList = [0 for _ in range(size)]
+
+    for v in range(1, size):
+        for neightbor in graph[v]:
+            indegreeList[neightbor] += 1
+
+    return indegreeList
 
 def topologicalSort(graph: List[List[int]]) -> List[int]:
+    ans = []
     size = len(graph)
-    visited = [False] * size
-    result = deque()
+    indegreeList = getIndgreeList(graph)
 
-    for v in range(1, size + 1):
-        if not visited[v]: dfs(v, graph, visited, result)
+    def isZeroIndegreeVetex(vertex:int) -> int: return indegreeList[vertex] == 0
 
-    return [*result]
+    queue = deque([i for i in range(1, size) if isZeroIndegreeVetex(i)])
+
+    while queue:
+        vertex = queue.popleft()
+        ans.append(vertex)
+
+        for neighbor in graph[vertex]:
+            indegreeList[neighbor] -= 1
+            if isZeroIndegreeVetex(neighbor): queue.append(neighbor)
+
+    return ans
 
 
-def dfs(v: int,
-        graph : List[List[int]],
-        visited : List[int],
-        result : deque
-    ):
-
-    visited[v] = True
-    for neighbor in graph[v]:
-        if not visited[neighbor]:
-            dfs(neighbor, graph, visited, result)
-    result.appendleft(v)

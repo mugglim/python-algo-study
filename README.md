@@ -15,7 +15,8 @@
 
 
 ### Commit Message 
-> 풀이: {출처}-{카테고리}-{문제 번호 or 문제명}
+> note: {노트 관련 설명}  
+> solved: {출처}-{카테고리}-{문제 번호 or 문제명}
 
 <details>
 <summary>출처</summary>
@@ -51,6 +52,8 @@
 |tp|투 포인터|
 |tree|트리|
 |hash|해시 테이블|
+|topo|위상정렬|
+
 
 </div>
 </details>
