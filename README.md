@@ -16,7 +16,7 @@
 
 ### Commit Message 
 > note: {노트 관련 설명}  
-> solved: {출처}-{카테고리}-{문제 번호 or 문제명}
+> sol: {출처}-{카테고리}-{문제 번호 or 문제명}
 
 <details>
 <summary>출처</summary>
