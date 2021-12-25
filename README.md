@@ -6,13 +6,11 @@
 <img align='center' src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mugglim">
 
 ### Result
-- ✅ 2020 충북대학교 SW중심대학사업단 프로그래밍 경진대회 장려상
-- ✅ 2021 Startup Coding Festival 1차 
-- ✅ 2021 카카오 인턴십 for Tech developers 코딩테스트 
-- ✅ 2021 부스트캠프 웹·모바일 6기 1차 코딩테스트 
 - ✅ 2021 부스트캠프 웹·모바일 6기 2차 코딩테스트 
-
-
+- ✅ 2021 부스트캠프 웹·모바일 6기 1차 코딩테스트 
+- ✅ 2021 카카오 인턴십 for Tech developers 코딩테스트 
+- ✅ 2021 Startup Coding Festival 1차 및 2차 
+- ✅ 2020 충북대학교 SW중심대학사업단 프로그래밍 경진대회 장려상
 
 ### Commit Message 
 > note: {노트 관련 설명}  
@@ -57,6 +55,9 @@
 
 </div>
 </details>
+
+### 다시 풀어볼 문제
+- [Link](./problems/README.md)
 
 ### Ref.
 - https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw
