@@ -4,8 +4,8 @@
   - 신장 트리
     > 모든 정점을 연결하기 위한 간선의 최소 개수 : V-1 
     - 최소한의 간선의 개수로 모든 정점을 연결한 그래프 => 사이클이 발생하면 안 됨.
-    <img src="./spanning-tree.png" width="500" height="300">
-      - 출처 : [위키백과](https://ko.wikipedia.org/wiki/%EC%8B%A0%EC%9E%A5_%EB%B6%80%EB%B6%84_%EA%B7%B8%EB%9E%98%ED%94%84)
+    - <img src="./spanning-tree.png" width="500" height="300">
+    - 출처 : [위키백과](https://ko.wikipedia.org/wiki/%EC%8B%A0%EC%9E%A5_%EB%B6%80%EB%B6%84_%EA%B7%B8%EB%9E%98%ED%94%84)
   - 최소 신장 트리
     - 간선의 가중치 합이 가장 작은 신장 트리
 
