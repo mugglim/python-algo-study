@@ -68,4 +68,3 @@ def solution(nodeinfo):
     postorder(root)
 
     return answer
-
