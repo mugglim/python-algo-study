@@ -13,7 +13,7 @@ def solution(s):
             pattern = s[i:i+length]
             cnt = 1
             curr = i
-            # 문자열 압축이 가능한 경우
+            # string 압축이 가능한 경우
             while pattern == s[curr+length:curr+length*2] and curr < len(s):
                 cnt += 1
                 curr += length

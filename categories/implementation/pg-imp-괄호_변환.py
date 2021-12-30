@@ -1,4 +1,4 @@
-# 올바믄 괄호 문자열 확인
+# 올바믄 괄호 string 확인
 def check1(s):
     stack = []
     for x in s:

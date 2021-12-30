@@ -30,7 +30,7 @@ def postorder(root):
 
 def solution(nodeinfo):
     nodeinfo = [l+[i+1] for i,l in enumerate(nodeinfo)]
-    nodeinfo.sort(key=lambda x:(-x[1],x[0])) # y값을 기준으로 내림차순 정렬
+    nodeinfo.sort(key=lambda x:(-x[1],x[0])) # y값을 기준으로 내림차순 sorting
     y_to_lv = {nodeinfo[0][1]:0}
     dic = {0:[Node(nodeinfo[0][0],nodeinfo[0][-1])]}
 

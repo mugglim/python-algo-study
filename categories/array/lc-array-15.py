@@ -1,5 +1,5 @@
 """
-nums : 정수 배열
+nums : 정수 array
 
 정의
     - 3개의 element를 선택하여 합이 0인 경우의 element 들을 반환

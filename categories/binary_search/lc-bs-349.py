@@ -7,7 +7,7 @@ def binarySearch(arr, target):
 
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
-        # (1) 이진탐색
+        # (1) binary_search
         dic = {}
 
         nums1.sort()

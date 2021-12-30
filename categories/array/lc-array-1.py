@@ -1,6 +1,6 @@
 """
 # 정의
-    nums : 정수 배열, target: 정수
+    nums : 정수 array, target: 정수
     nums에서 두 element를 더해 target이 되는 index를 array를 반환
     해답은 정확히 1개
 # 해결
