@@ -8,7 +8,6 @@ m = int(input())
 recommends = list(map(int,input().split()))
 
 heap = []
-figs = [False] * (n+1)
 
 def getStudentIndex(studentNum):
     if not heap: return -1
@@ -40,3 +39,5 @@ for time, studentNum in enumerate(recommends):
 
 ans = sorted([fig[2] for fig in heap])
 print(*ans)
+
+
