@@ -9,35 +9,43 @@ recommends = list(map(int,input().split()))
 
 heap = []
 
-def getStudentIndex(studentNum):
-    if not heap: return -1
 
+def isExistStudent(studentNum):
+    if not heap: return False
+
+    for i in range(len(heap)):
+        if heap[i][2] == studentNum:
+            return True
+
+    return False
+
+
+def getStudentIndex(studentNum):
     for i in range(len(heap)):
         if heap[i][2] == studentNum:
             return i
 
     return -1
 
+
 def updateStudent(studentIdx):
     heap[studentIdx][0] += 1
     heapify(heap)
 
 def isFull(): return len(heap) == n
-def addStudent(time, studentNum): heappush(heap, [1, time, studentNum])
+
+def addStudent(time, studentNum):
+    if isFull(): heappop(heap)
+    heappush(heap, [1, time, studentNum])
 
 for time, studentNum in enumerate(recommends):
-    if not heap:
+    if not heap or not isExistStudent(studentNum):
         addStudent(time,studentNum)
     else:
         studentIdx = getStudentIndex(studentNum)
-        if studentIdx != -1:
-            updateStudent(studentIdx)
-        else:
-            if isFull(): heappop(heap)
-            addStudent(time, studentNum)
+        updateStudent(studentIdx)
 
 
 ans = sorted([fig[2] for fig in heap])
 print(*ans)
-
 
