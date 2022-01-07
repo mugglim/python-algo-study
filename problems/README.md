@@ -12,6 +12,10 @@
     - [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105)
 - 배낭 문제
     - [평범한 배낭](https://www.acmicpc.net/problem/12865)
+    
+## Backtracking
+- [스도쿠](https://www.acmicpc.net/problem/2580)
+- [N-Queen](https://www.acmicpc.net/problem/9663)
 
 ## 추천 사이트
 - https://covenant.tistory.com/224
