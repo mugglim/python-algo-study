@@ -1,35 +1,25 @@
 from collections import deque
-from typing import List
 
-input = sys.stdin.readline
-
-def getIndgreeList(graph: List[List[int]]) -> List[int]:
-    size = len(graph)
-    indegreeList = [0 for _ in range(size)]
-
-    for v in range(1, size):
-        for neightbor in graph[v]:
-            indegreeList[neightbor] += 1
-
-    return indegreeList
-
-def topologicalSort(graph: List[List[int]]) -> List[int]:
+def topology_sort(graph):
     ans = []
     size = len(graph)
-    indegreeList = getIndgreeList(graph)
+    in_degree_list = [0 for i in range(size)]
 
-    def isZeroIndegreeVetex(vertex:int) -> int: return indegreeList[vertex] == 0
+    # init in_degree
+    for node in range(1,size):
+        for adj_node in graph[node]:
+            in_degree_list[adj_node] += 1
 
-    queue = deque([i for i in range(1, size) if isZeroIndegreeVetex(i)])
+    # insert node if in-degree of node is zero
+    queue = deque([node for node in range(1, size) if in_degree_list[node] == 0])
 
     while queue:
-        vertex = queue.popleft()
-        ans.append(vertex)
+        node = queue.popleft()
+        ans.append(node)
 
-        for neighbor in graph[vertex]:
-            indegreeList[neighbor] -= 1
-            if isZeroIndegreeVetex(neighbor): queue.append(neighbor)
+        for adj_node in graph[node]:
+            in_degree_list[adj_node] -= 1
+            if in_degree_list[adj_node] == 0:
+                queue.append(adj_node)
 
     return ans
-
-
