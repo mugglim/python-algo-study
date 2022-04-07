@@ -15,7 +15,7 @@
 > ["flower","flow","flight"]
 
 위와 같은 문자열 배열이 있다고 가정하면, `fl` 이후에서 분기가 발생하기 때문에 `fl`이 `LCP`가 되는 것이다.
-![lcp](./lcp.png)
+![lcp](lcp.png)
 
 
 ## 코드

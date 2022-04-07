@@ -5,25 +5,6 @@
 ### BOJ Profile
 <img align='center' src="http://mazassumnida.wtf/api/v2/generate_badge?boj=mugglim">
 
-### Result
-- ✅ 2021 부스트캠프 웹·모바일 6기 2차 코딩테스트 
-- ✅ 2021 부스트캠프 웹·모바일 6기 1차 코딩테스트 
-- ✅ 2021 카카오 인턴십 for Tech developers 코딩테스트 
-- ✅ 2021 Startup Coding Festival 1차 및 2차 
-- ✅ 2020 충북대학교 SW중심대학사업단 프로그래밍 경진대회 장려상
-
-### util
-
-### flatten
-```python
-from typing import List
-from functools import reduce
-
-def flatten1(matrix: List[List[int]]) -> List[int]: return reduce(lambda a,b:[*a,*b], matrix)
-def flatten2(matrix: List[List[int]]) -> List[int]: return [value for row in matrix for value in row]
-```
-
-
 ### Commit Message 
 > note: {노트 관련 설명}  
 > sol: {출처}-{카테고리}-{문제 번호 or 문제명}
@@ -69,7 +50,4 @@ def flatten2(matrix: List[List[int]]) -> List[int]: return [value for row in mat
 </details>
 
 ### 다시 풀어볼 문제
-- [Link](./problems/README.md)
-
-### Ref.
-- https://www.youtube.com/channel/UCZLJf_R2sWyUtXSKiKlyvAw
+- [Link](categories/remind-problem-set.md)
